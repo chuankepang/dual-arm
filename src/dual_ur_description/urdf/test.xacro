@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"   name="dual_ur" >
+  
+  <link name="world" />
+
+
+  <joint name="jizuo_to_world" type="fixed">
+    <parent link="world"/>
+    <child link="jizuo"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+
+  
+  
+  <link name="jizuo">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dual_ur_description/meshes/body.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dual_ur_description/meshes/body.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  
+
+
+
+
+
+  </robot>

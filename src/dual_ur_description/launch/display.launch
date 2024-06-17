@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="limited" default="false" doc="If true, limits joint range [-PI, PI] on all joints." />
+	<arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface" />
+
+
+        <!-- 加载机器人urdf文件 robot model -->
+        <include file="$(find dual_ur_description)/launch/dual_ur_e_upload.launch">
+                <arg name="limited" value="$(arg limited)"/>
+        </include>
+
+
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+        <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find dual_ur_description)/launch/urdf.rviz" />
+</launch>
