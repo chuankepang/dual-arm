@@ -165,7 +165,7 @@ roslaunch dual_ur_moveit_config moveit_rviz.launch
 
 <div align=center><img src="./dual_ur_pics/节点图.png"></div>
 
-rviz可视化界面与真实机器人：
+真实机器人：
 
 
 <div align=center><img src="./dual_ur_pics/真实机器人.jpg" width="380px"></div>
