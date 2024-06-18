@@ -71,7 +71,7 @@
 
 + `moveit_rviz.launch`：启动rviz可视化运动规划。
 
-  ![rviz可视化](./dual_ur_pics/实物与Rviz可视化.png)
+<div align=center><img src="./dual_ur_pics/实物与Rviz可视化.png"></div>
 
 + `demo.launch`：模拟的运动规划演示程序。
 
@@ -145,7 +145,7 @@ roslaunch dual_ur_moveit_config dual_ur_moveit_planning_execution.launch limited
 roslaunch dual_ur_moveit_config moveit_rviz.launch 
 ```
 
-![gazebo仿真](./dual_ur_pics/仿真机器人.jpg)
+<div align=center><img src="./dual_ur_pics/仿真机器人.jpg"></div>
 
 ### 2. 使用真实机器人
 
@@ -162,14 +162,13 @@ roslaunch dual_ur_moveit_config moveit_rviz.launch
 
 启动顺利的节点图：
 
-![节点图](./dual_ur_pics/节点图.png)
+
+<div align=center><img src="./dual_ur_pics/节点图.png"></div>
 
 rviz可视化界面与真实机器人：
 
-<figure class="half">
-    <img src="./dual_ur_pics/真实机器人.jpg" width="390px" />
-</figure>
 
+<div align=center><img src="./dual_ur_pics/真实机器人.jpg" width="380px"></div>
 
 ## 四、在轨组装任务命令
 ### 1. 使用左臂机器人
